@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lopal - Senai</h1>
+    <script>
+        // Introdução - Comandos de saída iniciais
+        console.log("Meu codiguin")
+        alert("Olá, você")
+
+        // Declaração de Variáveis
+        let prompt_one = prompt("Digite o primeiro número: ")
+        let prompt_two = prompt("Digite o segundo número: ")
+
+        let num_one = parseFloat(prompt_one)
+        let num_two = parseFloat(prompt_two)
+
+        // Comandos de saída
+        console.log (` Tipo da variável num_one: ${typeof num_one}`)
+        console.log (` Tipo da variável num_two: ${typeof num_two}`)
+
+        // Se ambos as entradas são números, então execute as operações matemáticas
+        if (!isNaN(num_one) && !isNaN(num_two)) {
+
+            // Aviso para entrada válida
+            console.log("ENTRADAS VÁLIDAS")
+            alert("ENTRADAS VÁLIDAS")
+
+            // Operações Matemáticas
+            let sum = num_one + num_two
+            let sub = num_one - num_two
+            let mult = num_one * num_two
+            let div = num_one / num_two
+            let exp = num_one ** num_two
+            let rad = Math.sqrt(sum)
+
+            // Comandos de saída finais
+            console.log("Soma: ", sum)
+            console.log("Subtração: ", sub)
+            console.log("Multiplicação: ", mult)
+            console.log("Divisão: ", div)
+            console.log("Exponenciação: ", exp)
+            console.log("Raiz Quadrada: ", rad)
+            alert(`Soma: ${sum}`)
+            alert(`Subtração: ${sub}`)
+            alert(`Multiplicação: ${mult}`)
+            alert(`Divisão: ${div}`)
+
+        }
+        else {
+
+            // Aviso para entrada inválida
+            console.log("INVÁLIDO! Algum dado digitado não é um número.")
+            alert("INVÁLIDO! Algum dado digitado não é um número.")
+
+        }
+    </script>
+</body>
+
+</html>
